@@ -3,11 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800">
+        mc:Ignorable="d" 
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="1000" Width="1000">
     <Grid>
         <TextBox FontSize="42">Sierpinski Triangle</TextBox>
-        <TextBox FontSize="16" Margin="10,70,10,599" 
+        <TextBox FontSize="16" Margin="10,70,10,799" 
                  Text="To begin, three points are drawn - each representing a corner of a triangle. Two of these points are randomly &#x0a;selected, a new point is then  drawn between these two. After this, a new point of the original three is &#x0a; randomly selected - a new point is then drawn between the new point that was drawn in the previous step &#x0a; and the randomly selected one. This process is then repeated over and over. &#x0a; You will notice a pattern emerges. This happens every time, but it has never been mathematically proven...">
         </TextBox>
         <Button 
@@ -15,9 +16,9 @@
             Width="100"
             Height="50"
             FontSize="20"
-            VerticalAlignment="top"
+            VerticalAlignment="Top"
             HorizontalAlignment="Left"
-            Margin="10, 190, 10, 10"
+            Margin="355,215,0,0"
             Click="StartButton_OnClick"
             >Start
         </Button>
@@ -26,9 +27,9 @@
             Width="100"
             Height="50"
             FontSize="20"
-            VerticalAlignment="top"
+            VerticalAlignment="Top"
             HorizontalAlignment="Left"
-            Margin="10, 260, 10, 10"
+            Margin="545,215,0,0"
             Click="StopButton_OnClick"
         >Stop
         </Button>
@@ -46,7 +47,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"/>
         </Border>
-        <TextBlock Margin="355,600,355,165" TextAlignment="Center">Amount of dots:</TextBlock>
-        <TextBlock Name="Counter" Margin="355,620,355,125" TextAlignment="Center" FontSize="24"></TextBlock>
+        <TextBlock Margin="355,697,355,165" TextAlignment="Center">Amount of dots:</TextBlock>
+        <TextBlock Name="Counter" Margin="355,718,355,119" TextAlignment="Center" FontSize="24"></TextBlock>
     </Grid>
 </Window>
